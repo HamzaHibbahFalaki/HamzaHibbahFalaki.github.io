@@ -172,61 +172,31 @@
             <p>Feel free to reach out for collaborations or just a friendly chat</p>
         </div>
         
-        <div class="contact-container">
-            <div class="contact-form-wrapper">
-                <form class="contact-form" id="contactForm">
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" required placeholder="Your name">
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required placeholder="your.email@example.com">
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="subject">Subject</label>
-                        <input type="text" id="subject" name="subject" required placeholder="What's this about?">
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" required placeholder="Your message here..." rows="5"></textarea>
-                    </div>
-                    
-                    <button type="submit" class="btn btn-primary">
-                        Send Message <i class="fas fa-paper-plane"></i>
-                    </button>
-                </form>
-            </div>
-            
-            <div class="contact-socials">
-                <h3>Follow Me</h3>
-                <div class="social-icons">
-                    <a href="mailto:hamzahibbah0@gmail.com" class="social-icon">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/hamza-hibbah-falaki/" target="_blank" class="social-icon">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="https://github.com/HamzaHibbahFalaki" target="_blank" class="social-icon">
-                        <i class="fab fa-github"></i>
-                    </a>
-                </div>
+        <div class="contact-socials-center">
+            <h3>Follow Me</h3>
+            <div class="social-icons">
+                <a href="mailto:hamzahibbah0@gmail.com" class="social-icon">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/hamza-hibbah-falaki/" target="_blank" class="social-icon">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/HamzaHibbahFalaki" target="_blank" class="social-icon">
+                    <i class="fab fa-github"></i>
+                </a>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2025 Hamza Hibbah Falaki. Built with passion and code.</p>
+        <p>&copy; 2025 Hamza Hibbah Falaki. </p>
     </footer>
 
     <!-- JavaScript -->
     <script>
         // Typing Animation
-        const words = ["Junior Data Analyst", "Junior Data Engineer", "Problem Solver"];
+        const words = ["Junior Data Analyst", "Junior Data Engineer", "Problem Solver", "Data Enthusiast"];
         let wordIndex = 0;
         let charIndex = 0;
         let isDeleting = false;
@@ -265,22 +235,6 @@
             } else {
                 header.classList.remove('scrolled');
             }
-        });
-
-        // Form Submission Handler
-        document.getElementById('contactForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const subject = document.getElementById('subject').value;
-            const message = document.getElementById('message').value;
-            
-            // Here you can add your form submission logic (e.g., send to email service)
-            alert(`Thank you ${name}! Your message has been received. I'll get back to you soon!`);
-            
-            // Reset form
-            this.reset();
         });
 
         // Smooth Scroll
